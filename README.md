@@ -64,3 +64,6 @@ Google Sheet → n8n Automation → Email Trigger → Data Update → Power BI D
 ## 🚀 How to Run Project
 
 1. Install n8n:
+
+## Author
+Harmanjot Kaur 
