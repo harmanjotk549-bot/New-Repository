@@ -1,69 +1,102 @@
-# 🤖 AI-Powered Interview Updates System
+# 🤖 AI-Powered HR Interview Notification System
 
-## 📌 Project Overview
-This project automates the recruitment communication process using **n8n automation** and **Power BI analytics**.
-
-HR teams often manually send interview results and updates to candidates, which consumes time and may cause delays.
-
-This system automatically:
-- Reads candidate interview data
-- Checks selection status
-- Sends automated emails
-- Updates records
-- Displays analytics dashboard
+## 📌 Overview
+This project is an automated HR workflow built using **n8n** that streamlines the interview evaluation process.  
+It reads candidate data, evaluates performance based on predefined conditions, sends automated emails, and updates records — all without manual intervention.
 
 ---
 
-## 🎯 Problem Statement
-HR professionals spend significant time manually informing candidates about interview results. This leads to delayed communication and inefficient recruitment workflows.
+## 🚀 Features
+- 📊 Fetch candidate data from Google Sheets  
+- 🔄 Process each candidate automatically  
+- 🧠 Evaluate interview scores using conditions  
+- 📧 Send automated emails (Selected / Not Selected)  
+- 📝 Update results back to Google Sheets  
+- ⚡ Fully automated workflow  
 
 ---
 
-## 💡 Solution
-An AI-powered automation workflow that:
-- Detects candidate status automatically
-- Sends selection/rejection emails
-- Updates Google Sheets
-- Visualizes hiring insights using Power BI
+## 🛠️ Technologies Used
+- **n8n** – Workflow Automation  
+- **Google Sheets** – Data Storage  
+- **Gmail API** – Email Notifications  
+- **Power BI** – Data Visualization Dashboard  
 
 ---
 
-## ⚙️ Workflow Architecture
+## ⚙️ Workflow Explanation
 
-Google Sheet → n8n Automation → Email Trigger → Data Update → Power BI Dashboard
+1. **Trigger**
+   - Starts the workflow manually or automatically  
 
----
+2. **Get Data**
+   - Fetches candidate details from Google Sheets  
 
-## 🛠 Tools Used
-- n8n (Workflow Automation)
-- Google Sheets
-- Gmail API
-- Power BI
-- GitHub
+3. **Loop Over Items**
+   - Processes each candidate one by one  
 
----
+4. **IF Condition**
+   - Checks interview score  
+   - If score ≥ 60 → Selected  
+   - Else → Not Selected  
 
-## 🔧 Techniques Used
-- Workflow Automation
-- Conditional Logic (IF Node)
-- Data Integration
-- Email Automation
-- HR Analytics Visualization
-- Recruitment Process Optimization
+5. **Send Email**
+   - Sends email based on result  
 
----
-
-## 📊 Dashboard Insights
-- Total Candidates
-- Selected vs Not Selected
-- Average Interview Score
-- Position-wise Selection Analysis
+6. **Update Sheet**
+   - Appends updated status in Google Sheets  
 
 ---
 
-## 🚀 How to Run Project
+## 📊 Dashboard (Power BI)
+The dashboard provides:
+- Total number of candidates  
+- Selected vs Not Selected ratio  
+- Average interview score  
+- Candidate-wise details  
+- Position-wise analysis  
 
-1. Install n8n:
+---
 
-## Author
-Harmanjot Kaur 
+## 💡 Use Case in HR
+This system helps HR teams by:
+- Reducing manual work  
+- Providing instant candidate responses  
+- Improving efficiency and accuracy  
+- Enabling data-driven hiring decisions  
+
+---
+
+## 🔮 Future Enhancements
+- AI-based resume screening  
+- Chatbot integration for HR queries  
+- Automated interview scheduling  
+- Predictive hiring analytics  
+
+---
+
+## 📷 Screenshots
+### n8n Workflow
+![Workflow](./images/workflow.png)
+
+### Power BI Dashboard
+![Dashboard](./images/dashboard.png)
+
+---
+
+## 📂 How to Use
+1. Import the workflow JSON into n8n  
+2. Connect your Google Sheets & Gmail  
+3. Update sheet ID and credentials  
+4. Run the workflow  
+
+---
+
+## 👩‍💻 Author
+**Harmanjot Kaur**
+
+---
+
+## ⭐ Conclusion
+This project demonstrates how automation can transform traditional HR processes into a faster, smarter, and more efficient system.
+
