@@ -7,12 +7,12 @@ It reads candidate data, evaluates performance based on predefined conditions, s
 ---
 
 ## Features
-- 📊 Fetch candidate data from Google Sheets  
-- 🔄 Process each candidate automatically  
-- 🧠 Evaluate interview scores using conditions  
-- 📧 Send automated emails (Selected / Not Selected)  
-- 📝 Update results back to Google Sheets  
-- ⚡ Fully automated workflow  
+- Fetch candidate data from Google Sheets  
+- Process each candidate automatically  
+- Evaluate interview scores using conditions
+- Send automated emails (Selected / Not Selected)  
+- Update results back to Google Sheets  
+- Fully automated workflow  
 
 ---
 
